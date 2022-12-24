@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="timeOut.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="para">Example of setTimeOut</p>
+
+    <p class="enter" id="enter"></p>
+
+    <button class="btn" id="btn" >Click it</button>
+    
+</body>
+
+<script>
+
+    const enterBtn = document.querySelector("#enter");
+    const btn = document.querySelector("#btn");
+
+    const enter = () => {
+
+        enterBtn.innerHTML = "Loading....";
+
+        setTimeout(() =>{
+             enterBtn.innerHTML="Hello brother"
+        },1000)
+    }
+
+    btn.addEventListener('click',enter)
+</script>
+</html>

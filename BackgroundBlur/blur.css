@@ -1,0 +1,116 @@
+.body{
+    height: 97vh;
+    width: 97vw;
+}
+.container{
+    height: 97vh;
+    width: 97vw;
+    background: url("https://thumbs.dreamstime.com/z/red-light-keyboard-hd-wallpaper-background-171994124.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.action.container{
+    filter: blur(5px) brightness(.7);
+}
+h1{
+    color: white;
+    font-size: 4em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.btn{
+    height: 35px;
+    width: 150px;
+    color: black;
+    background: yellow;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.btn:hover{
+    filter: brightness(.8);
+}
+.popup{
+    height: 300px;
+    width: 400px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    background-color: orangered;
+    border-radius: 10px;
+    transform: translate(-50%);
+}
+.popup h3{
+    position: absolute;
+    font-size: 1.3em;
+    left: 13%;
+    top: 10%;
+    letter-spacing: 2px;
+}
+.action.popup{
+    visibility: hidden;
+}
+
+.popup input{
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px;
+    position: absolute;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    top: 30%;
+    left: 15%;
+}
+
+.popup .pass{
+    position: absolute;
+    top: 48%;
+}
+
+.button{
+    height: 30px;
+    width: 250px;
+    background-color: yellow;
+    font-size: 1em;
+    letter-spacing: 1px;
+    border: none;
+    position: absolute;
+    top: 72%;
+    left: 20%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button:hover{
+    filter: brightness(.8);
+}
+
+.cross{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    left: 90%;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    font-size: 3em;
+    border: none;
+    cursor: pointer;
+}
+.cross:hover{
+    color: yellowgreen;
+}

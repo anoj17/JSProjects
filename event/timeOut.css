@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.para{
+    font-size: 2em;
+    position: absolute;
+    color: yellow;
+}
+.btn{
+    height: 30px;
+    width: 100px;
+    background-color: yellow;
+    color: black;
+    font-size: 1.3em;
+    position: absolute;
+    top: 58%;
+    cursor: pointer;
+}
+.enter{
+    position: absolute;
+    top: 50%;
+    font-size: 1.4em;
+    color: yellow;
+}

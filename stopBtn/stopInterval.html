@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stopInterval.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <p class="para">Click btn 2 you want to stop it</p>
+        <p class="para1" id="para"></p>
+        <button class="btn1" id="btn1">btn1</button>
+        <button class="btn2" id="btn2">btn2</button>
+    </div>
+    
+</body>
+
+<script>
+  
+  const intPara = document.querySelector("#para");
+  const btn1 = document.querySelector("#btn1");
+  const btn2 = document.querySelector("#btn2");
+
+  let num=0;
+  let timrRef;
+
+  const showPara = () => {
+       intPara.innerHTML = "Loading ...."
+
+       timeRef = setInterval( () => {
+          intPara.innerHTML = `${num}`
+          num++
+       },1000);
+
+  }
+
+  btn1.addEventListener('click',showPara);
+
+  btn2.addEventListener('click', () => {
+     clearInterval(timeRef);
+  })
+
+</script>
+</html>

@@ -1,0 +1,59 @@
+
+body{
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg);
+    background-size: cover;
+}
+h1{
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+.main{
+    display: flex;
+}
+.main div{
+    margin: 5px;
+ }
+
+.main span{
+   color: white;
+   background: blueviolet;
+   font-size: 2.5em;
+   display: flex;
+   justify-content: center;
+   height: 60px;
+   width: 100px;
+   align-items: center;
+   opacity: 0.8;
+}
+.main .text{
+    font-size: 1em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: black;
+    height: 30px;
+}
+.main #ampm{
+    position: absolute;
+    top: 49%;
+    left: 62%;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+
+
