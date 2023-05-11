@@ -1,6 +1,6 @@
 
 
-// **Anonomous Function**
+// **Anonomous Function** : which have no name
 
 // var anoFunc = function(a,b){
 //     return a+b;
@@ -55,4 +55,163 @@
 // *****document.child.length
 // *****document.hasChildNodes()
 
-// Trying to bug fix 
+// const add = (a,b) => {
+//     console.log(a+b)
+// }
+// add(4,5)
+
+// Higher order function : as an argument accept a function
+// Call back function : as an argument call garni
+
+
+//Lexical Scoping : child function can use from parent but not vice-versa
+
+// Event bubbling : fired first bottom div and than parent div 
+// Event capturing : parent and than child div
+
+// const func2 = () => {
+
+//     setTimeout( () => {
+//     console.log(`function 2 is call`);
+// },3000);
+// }
+
+//     const func1 = () => {
+//         console.log(`function 1 is call`);
+//         func2();
+//         console.log(`function 1 is call`);
+//     }
+//     func1();
+
+
+ // Curring function
+
+ // sum(5)(3)(8)
+
+//  const sum = (num1) =>{
+//     console.log(num1)
+
+//     return function(num2){
+//         console.log(num1,num2)
+
+//     return function(num3){
+//         console.log(num1,num2,num3)
+//     }
+//   }
+//  }  
+
+//   sum(5)(3)(8)
+
+
+//       XMLHttpRequest
+                //  use to interact with Server
+                //  without refressing we can retrieve data
+
+                // AJAX : asynchoronous js and xml
+        
+
+                // const num = [2,3,4,7,11,20];
+                // const target = 30;
+
+                // const helloFunction = () => {
+                //      const a = num.indexOf(3)
+                //      const b = num.indexOf(7)
+                //      const c = num.indexOf(20)
+
+                //      console.log(`[${a},${b},${c}]`)
+            
+                // }
+                // helloFunction()
+
+            
+//  ********** Roman into Numbers **********
+
+// const romanToInt = () => {
+//     const string = prompt("Enter a roman number: ");
+//     if(string == "I"){
+//         console.log(3)
+//     }
+// }
+// romanToInt(string)
+
+
+// return indexes whose sum is equal to target****
+
+// const arr = [4, 5, 10, 20, 9, 7];
+// let target = 30;
+
+// let a;
+ 
+// for(a=0;a<=arr.length;a++){
+//    for(b=0;b<=arr.length;b++){
+//    if(arr[a]+arr[b]==target){
+//       console.log([a,b])
+//       return
+//    }
+//  }
+// }
+
+
+
+//RETURN SUM OF DIAGONAL OF MATRIX***
+// var diagonalSum = ()=> {
+//    let i,j
+//    let matrix = [
+//       [1,2,3,],
+//       [4,5,6],
+//       [7,8,9]
+//    ];
+//    let sum=0
+//    for(i=0;i<matrix[0].length;i++){
+//        for(j=0;j<matrix.length;j++){
+//            if(i+j==matrix.length){
+//                  sum =sum+matrix[i][j]
+//             }
+//        }
+//    }
+//    console.log(sum)
+// };
+// diagonalSum()
+
+
+// RETURN MATRIX ELEMENTS IN SPIRAL SHAPE
+
+// var spiralOrder = () => {
+
+//     let matrix = [
+//         [1,2,3],
+//         [4,5,6],
+//         [7,8,9]
+//     ];
+//     let arr = []
+//     let l=0
+//     let r=matrix[0].length
+//     let t=0
+//     let b=matrix.length
+//     let i
+
+//     while(l<r && t<b){
+//         for(i=l;i<r;i++){
+//             arr.push(matrix[t][i])
+//         }
+//         t++;
+//         for(i=t;i<b;i++){
+//             arr.push(matrix[i][r-1])
+//         }
+//         r--;
+
+//          if (!(l < r && t<b)){
+//             break;
+//         }
+
+//         for(i=r-1;i>l;i--){
+//             arr.push(matrix[b-1][i])
+//         }
+//         b--;
+//         for(i=b;i>t;i--){
+//             arr.push(matrix[i][l])
+//         }
+//     }
+//     console.log(arr)
+// };
+// spiralOrder()
