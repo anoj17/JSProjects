@@ -125,14 +125,33 @@
 
             
 //  ********** Roman into Numbers **********
+// var romanToInt = function() {
+//     let s='VXIMC'
+//     const myMap = {
+//         'I':1,
+//         'V':5,
+//         'X':10,
+//         'L':50,
+//         'C':100,
+//         'D':500,
+//         'M':1000
+//     }
+// let result = 0
+// for(let i=0;i<s.length;i++){
+//     const curr = myMap[s[i]]
+//     const next = myMap[s[i+1]]
 
-// const romanToInt = () => {
-//     const string = prompt("Enter a roman number: ");
-//     if(string == "I"){
-//         console.log(3)
+//     if(curr<next){
+//         result+= next-curr
+//         i++
+//     }
+//     else{
+//         result+= curr
 //     }
 // }
-// romanToInt(string)
+// return console.log(result)
+// };
+// romanToInt()
 
 
 // return indexes whose sum is equal to target****
@@ -215,4 +234,21 @@
 //     console.log(arr)
 // };
 // spiralOrder()
-//hello 
+
+
+// PALINDROME**
+
+// const palindromeNum = () =>{
+//     let x = 121
+//     let value = x.toString().split("").reverse().join()
+//     let values = x.toString().split("").join()
+//     // console.log(values)
+//     // console.log(value)
+//     if(value==values){
+//         console.log("palindrome")
+//     }
+//     else{
+//         console.log("not a palindrome")
+//     }
+// }
+// palindromeNum()
