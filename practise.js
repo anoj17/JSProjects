@@ -126,7 +126,7 @@
             
 //  ********** Roman into Numbers **********
 // var romanToInt = function() {
-//     let s='VXIMC'
+//     let s='III'
 //     const myMap = {
 //         'I':1,
 //         'V':5,
@@ -159,7 +159,7 @@
 // const arr = [4, 5, 10, 20, 9, 7];
 // let target = 30;
 
-// let a;
+// let a,b;
  
 // for(a=0;a<=arr.length;a++){
 //    for(b=0;b<=arr.length;b++){
@@ -176,7 +176,7 @@
 // var diagonalSum = ()=> {
 //    let i,j
 //    let matrix = [
-//       [1,2,3,],
+//       [6,2,5,],
 //       [4,5,6],
 //       [7,8,9]
 //    ];
@@ -252,3 +252,27 @@
 //     }
 // }
 // palindromeNum()
+
+// ****LONGEST COMMON PRIFIX*****
+
+// var longestCommonPrefix = function() {
+//     const strs = [
+//         "flower",
+//         "flower",
+//         "flower"
+//     ];
+//     if(strs.length==0){
+//         console.log("")
+//         return
+//     }
+//     for(let i=0;i<strs[0].length;i++){
+//         for(let j=1;j<strs.length;j++){
+//             if(strs[0][i]!=strs[j][i]){
+//                     console.log(strs[0].slice(0,i));
+//                     return;
+//             }
+//         }
+//     }
+//     console.log(strs[0])
+// };
+// longestCommonPrefix()
