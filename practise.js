@@ -276,3 +276,49 @@
 //     console.log(strs[0])
 // };
 // longestCommonPrefix()
+
+// ****** FIBONACCI SERIES *****
+
+// var fib = function() {
+//     let n=7;
+//     let a=0,b=1;
+//       let sum=0;
+  
+      
+//       for(let i=1;i<n;i++){
+//           sum = a+b;
+//           a=b
+//           b=sum;
+//       }
+//       console.log(n);
+//       console.log(sum);
+//       return
+      
+//   };
+//   fib()
+
+//****** VALID PARENTHESIS *****/
+
+var isValid = function() {
+    let s = '(]'
+    let stack = [];
+    for(let i = 0;i<s.length;i++){
+    let top = stack[stack.length-1]
+        if(s[i]=='('||s[i]=='{'||s[i]=='['){
+            stack.push(s[i])
+        }
+        else if(s[i]==')'&& top=='(' || s[i]=='}'&& top=='{' || s[i]==']'&& top=='[' ){
+            stack.pop();
+        }
+        else 
+        console.log(false);
+    }
+
+    if(stack.length==0){
+        console.log(true)
+    }
+    if(stack.length!=0){
+        console.log(false)
+    }
+};
+isValid()
